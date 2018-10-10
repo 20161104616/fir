@@ -7,7 +7,7 @@
 //
 
 import UIKit
-var base1 = 1;
+var base1 = 1.0;
 var base2 = 1;
 class ViewController: UIViewController {
 
@@ -21,12 +21,13 @@ class ViewController: UIViewController {
     @IBAction func number(_ sender: AnyObject) {
         let num = sender.currentTitle
         nu1.text = nu1.text! + num!!
-        base1 = nu1.text
-        cs.text = base1
+
     }
     
     @IBAction func calculate(_ sender: AnyObject) {
-        
+        let cal = sender.currentTitle
+        nu1.text = nu1.text! + cal!!
+    //    base1 = Double(nu1.text!)!;
     }
     
 
@@ -39,4 +40,4 @@ class ViewController: UIViewController {
 
 
 }
-
+// a按下运算符时储存前一个数
