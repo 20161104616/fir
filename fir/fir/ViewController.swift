@@ -8,8 +8,8 @@
 
 import UIKit
 var base1 = "";
-var base2 = "";
 let str1: String = "0"
+var base2 = [Int](repeatElement(0, count: 20))
 class ViewController: UIViewController {
 
     @IBOutlet weak var nu1: UILabel!
@@ -38,12 +38,23 @@ class ViewController: UIViewController {
    
     @IBAction func equal(_ sender: Any) {
         base1 = nu1.text!;
-        var i = 0;
-        for i in 0..<base1.count{
-            if(i != 0-9){
-                
+        
+        for ch1 in base1.utf8{
+            if ch1 == "+" {
+                print(
             }
+            
+          //  print("\(ch1)")
+          //  print("\n")
         }
+      /*  var i = 0;
+        for i in 0..<base1.count{
+            
+            */
+            /*if(i != 0 && i != 1 && i != 2 && i != 3 && i != 4 && i != 5 && i != 6 && i != 7 && i != 8 && i != 9 ){
+                
+            }*/
+        
             
         }
         
