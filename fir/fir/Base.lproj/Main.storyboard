@@ -44,9 +44,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccB-kQ-Aod">
                                 <rect key="frame" x="262" y="229" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="➗"/>
+                                <state key="normal" title="/"/>
                                 <connections>
-                                    <action selector="number:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fDv-wp-Atd"/>
+                                    <action selector="except:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v8x-kP-00C"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTI-cE-ulT">
@@ -76,9 +76,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ9-5b-0TZ">
                                 <rect key="frame" x="263" y="277" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="✖️"/>
+                                <state key="normal" title="*"/>
                                 <connections>
-                                    <action selector="number:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jm5-nQ-D85"/>
+                                    <action selector="ride:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Gh-fq-3LS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcm-kG-8yJ">
@@ -108,9 +108,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFa-dc-OP4">
                                 <rect key="frame" x="262" y="355" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="➖"/>
+                                <state key="normal" title="-"/>
                                 <connections>
-                                    <action selector="number:" destination="BYZ-38-t0r" eventType="touchUpInside" id="egd-bR-7Fp"/>
+                                    <action selector="reduce:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0qL-r1-vFU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGQ-eN-W7l">
@@ -140,9 +140,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2B-zR-5Rg">
                                 <rect key="frame" x="262" y="415" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="➕"/>
+                                <state key="normal" title="+"/>
                                 <connections>
-                                    <action selector="number:" destination="BYZ-38-t0r" eventType="touchUpInside" id="btw-3y-juy"/>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I9B-Q8-oZg"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JnU-l6-P4D">
@@ -159,8 +159,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8U-Wv-k74">
+                                <rect key="frame" x="46" y="46" width="267" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwa-J0-aau">
-                                <rect key="frame" x="30" y="61" width="298" height="59"/>
+                                <rect key="frame" x="38" y="137" width="298" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -174,6 +181,7 @@
                         <outlet property="cs" destination="JnU-l6-P4D" id="MuF-jc-93q"/>
                         <outlet property="cs1" destination="yk3-iA-Zos" id="hYr-fO-6jb"/>
                         <outlet property="nu1" destination="jwa-J0-aau" id="ru2-0o-Caw"/>
+                        <outlet property="nu2" destination="C8U-Wv-k74" id="vpb-LM-VIf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
