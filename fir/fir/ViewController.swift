@@ -155,7 +155,9 @@ class ViewController: UIViewController {
         case "/" :
             base1 = Double(nu1.text!)!;
             base2 = Double(nu2.text!)!;
-            if(base1 == 0){}
+            if(cs.text! == "0"){
+                nu1.text = "不行！"
+            }
             base1 = base2 / base1
             nu1.text = String(base1)
         default:
