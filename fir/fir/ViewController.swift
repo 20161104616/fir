@@ -9,6 +9,7 @@
 import UIKit
 var base1:Double = 0 ,base2:Double = 0;
 var base3 = "";
+var base4 = "";
 var counter = 0
 var symboll: String  = ""
 var symboll2: String  = ""
@@ -21,7 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nu1: UILabel!
     @IBOutlet weak var nu2: UILabel!
     
-    @IBOutlet weak var cs: UITextField!
+ //   @IBOutlet weak var cs: UITextField!
     
 
     
@@ -50,6 +51,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func add(_ sender: Any) {
+        
+        
+       
+        
+        
+        
+        
+        
         //调用等于
         equal(symboll);
         symboll = "+";
@@ -77,6 +86,23 @@ class ViewController: UIViewController {
         
     }
     @IBAction func ride(_ sender: Any) {
+        
+        
+        if  symboll = "+" || symboll = "-"{
+            base4 = nu1.text
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         equal(symboll);
         symboll = "*";
          counter = 1;
@@ -132,7 +158,7 @@ class ViewController: UIViewController {
         decimal = 0
     }
     
-
+ 
    
     @IBAction func equal(_ sender: Any) {
         switch symboll {
@@ -167,4 +193,27 @@ class ViewController: UIViewController {
         symboll = ""
         decimal = 0
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
