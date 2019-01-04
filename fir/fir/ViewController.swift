@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nu1: UILabel!
     @IBOutlet weak var nu2: UILabel!
     
- //   @IBOutlet weak var cs: UITextField!
+    @IBOutlet weak var cs: UITextField!
     
 
     
@@ -30,23 +30,23 @@ class ViewController: UIViewController {
     
     
     @IBAction func number(_ sender: AnyObject) {
-        let num = sender.currentTitle
-        nu1.text = nu1.text! + num!!
+        let num = sender.currentTitle;
+        nu1.text = nu1.text! + num!!;
         //base1 = Double(nu1.text!)!;
    //     base1 = nu1.text!;
         
-        cs.text = nu1.text;//String(base1)
+     //   cs.text = nu1.text;//String(base1)
     }
   
     @IBAction func point(_ sender: Any) {
         if(nu1.text == ""){
-            nu1.text = "0"
+            nu1.text = "0";
             
         }
         if(decimal == 0)
         {
-            nu1.text = nu1.text! + "."
-            decimal = 1
+            nu1.text = nu1.text! + ".";
+            decimal = 1;
         }
     }
     
@@ -65,8 +65,8 @@ class ViewController: UIViewController {
          counter = 1;
        // base1 = base1 + base2
 //        nu2.text = String(base1)
-        nu2.text = nu1.text
-        nu1.text = ""
+        nu2.text = nu1.text;
+        nu1.text = "";
   //      base2 = base1
         
     
@@ -77,8 +77,8 @@ class ViewController: UIViewController {
         symboll = "-";
         counter = 1;
        // base1 = base1 - base2
-        nu2.text = nu1.text//String(base1)
-        nu1.text = ""
+        nu2.text = nu1.text;//String(base1)
+        nu1.text = "";
    //     base2 = base1
         
         
@@ -87,28 +87,14 @@ class ViewController: UIViewController {
     }
     @IBAction func ride(_ sender: Any) {
         
-        
-        if  symboll = "+" || symboll = "-"{
-            base4 = nu1.text
-            
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
         
         equal(symboll);
         symboll = "*";
          counter = 1;
        
         nu2.text = nu1.text//String(base1)
-        nu1.text = ""
+        nu1.text = "";
    //     base2 = base1
         
         
@@ -120,8 +106,8 @@ class ViewController: UIViewController {
         symboll = "/";
         counter = 1;
       //  base1 = base1 / 1
-        nu2.text = nu1.text//String(base1)
-        nu1.text = ""
+        nu2.text = nu1.text;//String(base1)
+        nu1.text = "";
   //      base2 = base1
         
      
@@ -129,12 +115,10 @@ class ViewController: UIViewController {
     @IBAction func left(_ sender: Any) {
         base3 = nu2.text!
         symboll2 = symboll;
-       // clearall(<#Any#>);
-   //     base1 = 0;
-   //     base2 = 0;
-        nu1.text = ""
-        nu2.text = ""
-        symboll = ""
+
+        nu1.text = "";
+        nu2.text = "";
+        symboll = "";
         
         
     }
@@ -152,10 +136,10 @@ class ViewController: UIViewController {
     @IBAction func clearall(_ sender: Any) {
   //      base1 = 0;
   //      base2 = 0;
-        nu1.text = ""
-        nu2.text = ""
-        symboll = ""
-        decimal = 0
+        nu1.text = "";
+        nu2.text = "";
+        symboll = "";
+        decimal = 0;
     }
     
  
@@ -165,55 +149,36 @@ class ViewController: UIViewController {
         case "+" :
             base1 = Double(nu1.text!)!;
             base2 = Double(nu2.text!)!;
-            base1 = base1 + base2
-            nu1.text = String(base1)
+            base1 = base1 + base2;
+            nu1.text = String(base1);
         case "-" :
             base1 = Double(nu1.text!)!;
             base2 = Double(nu2.text!)!;
-            base1 = base2 - base1
-            nu1.text = String(base1)
-            nu2.text = String(base1)
+            base1 = base2 - base1;
+            nu1.text = String(base1);
+            nu2.text = String(base1);
         case "*" :
             base1 = Double(nu1.text!)!;
             base2 = Double(nu2.text!)!;
-        base1 = base1 * base2
-            nu1.text = String(base1)
+            base1 = base1 * base2;
+            nu1.text = String(base1);
         case "/" :
             base1 = Double(nu1.text!)!;
             base2 = Double(nu2.text!)!;
-            if(cs.text! == "0"){
-                nu1.text = "不行！"
-            }
-            base1 = base2 / base1
-            nu1.text = String(base1)
+          if(cs.text! == "0"){
+            nu1.text = "不行！";
+           }
+            base1 = base2 / base1;
+            nu1.text = String(base1);
         default:
             print(a);
             a += 1;
         }
-        symboll = ""
-        decimal = 0
+        symboll = "";
+        decimal = 0;
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
 }
